@@ -1,0 +1,215 @@
+body {
+    font-family: Open Sans Condensed;
+    background: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 5px black;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 2;
+}
+
+nav img {
+    height: 100px;
+    padding: 0 40px 0 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(30, 46, 71);
+    font-size: 18px;
+    min-width: 100px;
+    text-align: center;
+    padding: 45px 10px 40px 10px;
+    border-bottom: solid white 5px;
+}
+
+nav a:hover {
+    border-bottom: solid rgb(30, 46, 71) 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url("../images/newyork.jpg");
+    background-size: cover;
+    box-shadow: inset 0 1000px 0 rgba(255,255,255,0.8);
+    min-height: 80vh;
+    position: relative;
+    z-index: 0;
+}
+
+header h1 {
+    font-family: Bowlby One SC;
+    max-width: 1000px;
+    margin: 300px auto 0 auto;
+}
+
+header h2 {
+    font-size: 25px;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+header h4 {
+    background: rgb(30, 46, 71);
+    color: white;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    box-shadow: 0 -3px 3px 1px black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.process {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 0 40px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.step img {
+    margin: auto;
+    height: 80px;
+}
+
+.step h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0 10px 0;
+}
+
+.step p {
+    font-size: 20px;
+}
+
+.getStartedBtn button {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    height: 45px;
+    width: 200px;
+    background: transparent;
+    border: solid cadetblue 1px;
+    color: cadetblue;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.getStartedBtn button:hover {
+    background: cadetblue;
+    color: whitesmoke;
+    border: none;
+}
+
+.step {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 180px;
+    margin: 0 40px 0 40px;
+}
+
+#propertyPool {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    flex-wrap: wrap;
+}
+
+.property {
+    margin: 10px;
+    background: whitesmoke;
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.property h2 {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.property img {
+    height: 200px;
+    width: 300px;
+}
+
+.property .metrics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.property .price {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.property .metrics p {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.btnFrame {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btnFrame button {
+    background: transparent;
+    border: solid cadetblue 1px;
+    color: cadetblue;
+    height: 30px;
+    width: 140px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnFrame button:hover {
+    background: cadetblue;
+    color: whitesmoke;
+    border: none;
+}
+
+/* RESPONSIVE CSS QUERIES */
+
+@media only screen and (max-device-width: 480px) {
+    .process {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 60px 0 40px 0;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+}
