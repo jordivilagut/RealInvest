@@ -8,7 +8,7 @@
         <link rel='stylesheet' href='assets/styles/reset.css'>
         <link rel='stylesheet' href='resources/Hover.css/hover.css'>
         <link rel='stylesheet' href='resources/font-awesome-4.7.0/css/font-awesome.min.css'>
-        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans+Condensed:300|Cabin:400,500,600,700|Lora:400,700" rel="stylesheet">
         <link rel='stylesheet' href='assets/styles/styles.css'>
     </head>
 
@@ -16,47 +16,47 @@
 
         <nav>
             <img src="assets/images/realinvest.png">
-            <a href=#>Inicio</a>
-            <a href=#>Invertir</a>
+            <a href="index.html">Inicio</a>
+            <a href="profile_form.html">Invertir</a>
             <a href=#>Cómo Funciona</a>
             <a href=#>Contacto</a>
         </nav>
 
         <header>   
+            <div class="headerBanner">
+                <h1>Real Invest</h1>
+                <h2>Inversión Inmobiliaria Inteligente</h2>
 
-            <h1>Real Invest</h1>
-            <h2>Inversión Inmobiliaria Inteligente</h2>
+                <div class="process">
+                    <div class="step">
+                        <img src="assets/images/user-5.png">
+                        <h3>ACCEDE</h3>
+                        <p>Registra tu perfil cómo inversor.</p> 
+                    </div>
 
-            <div class="process">
-                <div class="step">
-                    <img src="assets/images/user-5.png">
-                    <h3>ACCEDE</h3>
-                    <p>Evaluamos tu perfil cómo inversor.</p> 
+                    <div class="step">
+                        <img src="assets/images/house-1.png">
+                        <h3>ENCAJA</h3>
+                        <p>Encontramos los productos que se adaptan a ti.</p> 
+                    </div>
+
+                    <div class="step">
+                        <img src="assets/images/time-is-money.png">
+                        <h3>GANA</h3>
+                        <p>Rentabiliza tu inversión des del primer mes.</p> 
+                    </div>
                 </div>
 
-                <div class="step">
-                    <img src="assets/images/house-1.png">
-                    <h3>ENCAJA</h3>
-                    <p>Encontramos los productos que se adaptan a tí.</p> 
-                </div>
-
-                <div class="step">
-                    <img src="assets/images/time-is-money.png">
-                    <h3>GANA</h3>
-                    <p>Rentabiliza tu inversión des del primer mes.</p> 
-                </div>
+                <a href="profile_form.html" class="getStartedBtn">
+                    <button type="button">EMPEZAR</button>
+                </a>
+                <h4>Invierte en Barcelona <i class="fa fa-map-marker" aria-hidden="true"></i></h4>
             </div>
-
-            <a href class="getStartedBtn">
-                <button type="button">EMPEZAR</button>
-            </a>
-            <h4>Invierte en Barcelona <i class="fa fa-map-marker" aria-hidden="true"></i></h4>
         </header>
 
         <main id="propertyPool">
 
             <div ng-repeat="property in properties">
-
                 <div class="property">
                     <h2>{{property.street}} {{property.streetNr}}</h2>
                     <img class="propertyImg" ng-src={{property.image}}>
@@ -65,12 +65,12 @@
                         <p>{{property.rent}} €/mes</p>
                         <p>{{property.irr}} %</p>
                     </div>
-                    <a href class="btnFrame">
+                    <a href="profile_form.html" class="btnFrame">
                         <button type="button">INVERTIR</button>
                     </a>
                 </div>
             </div>
-
+            
         </main>
 
         <script src="assets/scripts/realstate_json.js"></script>

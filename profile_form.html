@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="realInvestApp">
+    <head>
+        <title>Real Invest | Inversión inmobiliaria inteligente</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='assets/styles/reset.css'>
+        <link rel='stylesheet' href='resources/Hover.css/hover.css'>
+        <link rel='stylesheet' href='resources/font-awesome-4.7.0/css/font-awesome.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans+Condensed:300|Cabin:400,500,600,700|Lora:400,700" rel="stylesheet">
+        <link rel='stylesheet' href='assets/styles/styles.css'>
+    </head>
+
+    <body ng-controller="realInvestController" id="registerPage">
+
+        <nav>
+            <img src="assets/images/realinvest.png">
+            <a href="index.html">Inicio</a>
+            <a href="profile_form.html">Invertir</a>
+            <a href=#>Cómo Funciona</a>
+            <a href=#>Contacto</a>
+        </nav>
+
+        <main >
+            <h2>Cuéntanos más sobre tí</h2>
+            <h3>Nuestros algorítmos buscaran las propiedades que mejor se adaptan a tu perfil.</h3>
+            <form>
+                <input ng-model="name" type="text" placeholder="Nombre">
+                <input ng-model="lastName" type="text" placeholder="Apellidos">
+                <input ng-model="email" type="text" placeholder="Correo Electrónico">
+                <input ng-model="phone" type="text" placeholder="Teléfono">
+                <select>
+                    <option>Barcelona</option>
+                </select>
+                <select>
+                    <option>Selecciona tu renta mensual</option>
+                    <option>Inferior a 800€</option>
+                    <option>800-1500€</option>
+                    <option>1500-2500€</option>
+                    <option>Superior a 2500€</option>
+                </select>
+                <select>
+                    <option>Selecciona tu capacidad de ahorro</option>
+                    <option>Inferior a 800€</option>
+                    <option>800-1500€</option>
+                    <option>1500-2500€</option>
+                    <option>Superior a 2500€</option>
+                </select>
+
+                <button id="analize" type="submit" value="Encuentra Tu Inversión"><a href="property.html">Encuentra Tu Inversión <i class="fa fa-home" aria-hidden="true"></i></a></button>
+
+            </form>
+        </main>
+
+        <script src="assets/scripts/realstate_json.js"></script>
+        <script src="resources/AngularJS/angular.js"></script>
+        <script src="resources/AngularJS/angular-route-master/angular-route.js"></script>
+        <script src="resources/AngularJS/angular-scroll-master/angular-scroll.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>

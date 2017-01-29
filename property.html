@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="realInvestApp">
+    <head>
+        <title>Real Invest | Inversión inmobiliaria inteligente</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='assets/styles/reset.css'>
+        <link rel='stylesheet' href='resources/Hover.css/hover.css'>
+        <link rel='stylesheet' href='resources/font-awesome-4.7.0/css/font-awesome.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans+Condensed:300|Cabin:400,500,600,700|Lora:400,700" rel="stylesheet">
+        <link rel='stylesheet' href='assets/styles/styles.css'>
+    </head>
+
+    <body ng-controller="realInvestController" id="propertyPage">
+
+        <nav>
+            <img src="assets/images/realinvest.png">
+            <a href="index.html">Inicio</a>
+            <a href="profile_form.html">Invertir</a>
+            <a href=#>Cómo Funciona</a>
+            <a href=#>Contacto</a>
+        </nav>
+
+        <main >
+            <div class="propertyHeader">
+                <img class="propertyPic" src="assets/images/property1.jpg">
+                <div class="compatibility">
+                    <p>Compatible</p>
+                    <img class="chart" src="assets/images/compatibility.png">
+                </div>
+            </div>
+
+            <div class="propertyData">
+
+                <div id="mainData">
+                    <h2>Urgell 238</h2>
+                    <p class="dataPrice">195.000 €</p>
+                    <button>INVIERTE YA</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Ratio</th>
+                            <th>Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>30 años fijo</td>
+                            <td>4,625%</td>
+                            <td>752€</td>
+                        </tr>
+                        <tr>
+                            <td>20 años fijo</td>
+                            <td>4,500%</td>
+                            <td>925€</td>
+                        </tr>
+                        <tr>
+                            <td>15 años fijo</td>
+                            <td>4,125%</td>
+                            <td>1091€</td>
+                        </tr>
+                        <tr>
+                            <td>10/1 ARM</td>
+                            <td>4,625%</td>
+                            <td>752€</td>
+                        </tr>
+                        <tr>
+                            <td>5/1 ARM</td>
+                            <td>4,375%</td>
+                            <td>730€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+        <script src="assets/scripts/realstate_json.js"></script>
+        <script src="resources/AngularJS/angular.js"></script>
+        <script src="resources/AngularJS/angular-route-master/angular-route.js"></script>
+        <script src="resources/AngularJS/angular-scroll-master/angular-scroll.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>

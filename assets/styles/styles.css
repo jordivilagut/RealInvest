@@ -3,12 +3,8 @@ body {
     background: white;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size 40px;
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -16,6 +12,7 @@ nav {
     align-items: center;
     box-shadow: 0 0 10px 5px black;
     position: fixed;
+    top: 0;
     width: 100%;
     background: white;
     z-index: 2;
@@ -40,21 +37,22 @@ nav a:hover {
     border-bottom: solid rgb(30, 46, 71) 5px;
 }
 
-header {
+.headerBanner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background: url("../images/newyork.jpg");
     background-size: cover;
-    box-shadow: inset 0 1000px 0 rgba(255,255,255,0.8);
-    min-height: 80vh;
+    box-shadow: inset 0 3000px 0 rgba(255,255,255,0.8);
     position: relative;
     z-index: 0;
 }
 
 header h1 {
-    font-family: Bowlby One SC;
+    font-family: Lora;
+    font-size: 50px;
+    font-weight: 400;
     max-width: 1000px;
     margin: 300px auto 0 auto;
 }
@@ -65,7 +63,7 @@ header h2 {
     margin: 0 auto 0 auto;
 }
 
-header h4 {
+.headerBanner h4 {
     background: rgb(30, 46, 71);
     color: white;
     text-align: center;
@@ -103,9 +101,12 @@ header h4 {
     font-size: 20px;
 }
 
+.getStartedBtn {
+    padding-bottom: 100px;
+}
+
 .getStartedBtn button {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Open Sans Condensed;
     height: 45px;
     width: 200px;
@@ -198,6 +199,196 @@ header h4 {
     border: none;
 }
 
+/* REGISTER FORM CSS */
+
+#registerPage {
+    min-height: 100vh;
+    background: url("../images/newyork.jpg");
+    background-size: cover;
+    box-shadow: inset 0 3000px 0 rgba(255,255,255,0.8);
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+#registerPage main {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    background: whitesmoke;
+    padding: 20px 120px 20px 120px;
+    box-shadow: 0 0 5px  1px silver;
+}
+
+#registerPage main h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0 10px 20px;
+}
+
+#registerPage main h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+#registerPage form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registerPage form input, #registerPage form select {
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: Open Sans Condensed;
+    font-size: 16px;
+    outline: none;
+}
+
+#analize {
+    font-size: 25px;
+    font-family: Open Sans Condensed;
+    background: transparent;
+    border: solid cadetblue 1px;
+    color: cadetblue;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    color: cadetblue;
+}
+
+#analize:hover {
+    background: cadetblue;
+    color: whitesmoke;
+    border: none;
+}
+
+#analize a {
+    color: cadetblue;
+}
+
+#analize:hover a {
+    color: whitesmoke;
+}
+
+/* PROPERTY CSS */
+
+.propertyHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.propertyPic {
+    height: 240px;
+    margin: 30px;
+    box-shadow: 0 0 5px 2px black;
+}
+
+.compatibility {
+    margin: 30px;
+}
+
+.compatibility {
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.compatibility img {
+    height: 200px;
+}
+
+#mainData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#mainData button{
+    font-size: 30px;
+    font-family: Open Sans Condensed;
+    height: 45px;
+    width: 200px;
+    background: transparent;
+    border: solid cadetblue 1px;
+    color: cadetblue;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+#mainData button:hover {
+    background: cadetblue;
+    color: whitesmoke;
+    border: none;
+}
+
+.dataPrice {
+    font-size: 80px;
+    padding: 10px 0 30px 0;
+    color: dimgray;
+}
+
+.propertyData {
+    display: flex;
+    justify-content: space-between;
+}
+
+#propertyPage table {
+    table-layout: fixed;
+    margin: 10px;
+}
+
+#propertyPage td, #propertyPage th {
+    padding: 10px 20px 10px 20px;
+}
+
+#propertyPage td, #propertyPage th {
+    padding: 10px 20px 10px 20px;
+}
+
+#propertyPage th {
+    font-weight: bold;
+}
+
+#propertyPage tr {
+    border-bottom: solid gray 1px;
+}
+
+#propertyPage tr:nth-child(even) {
+    background: rgba(0,0,0,0.1);
+}
+
+#propertyPage {
+    min-height: 100vh;
+    background: url("../images/newyork.jpg");
+    background-size: cover;
+    box-shadow: inset 0 3000px 0 rgba(255,255,255,0.8);
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+#propertyPage main {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: whitesmoke;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 0 5px  1px silver;
+}
+
+#propertyPage main h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0 10px 20px;
+}
+
+#propertyPage main h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
 /* RESPONSIVE CSS QUERIES */
 
 @media only screen and (max-device-width: 480px) {
@@ -210,6 +401,23 @@ header h4 {
         padding: 60px 0 40px 0;
         max-width: 1000px;
         margin: auto;
+    }
+
+    .step {
+        padding-bottom: 80px;
+    }
+
+    header h1 {
+        margin-top: 200px;
+    }
+
+    nav img {
+        height: 60px;
+        padding-left: 10px;
+    }
+
+    nav a{
+        display: none;
     }
 
 }
